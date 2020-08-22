@@ -14,12 +14,8 @@ class Comments extends Component {
     }
 
     sendComments = () => {
-        if (this.state.comments === ''){
-            alert('please fill out form')
-        } else {
         this.props.dispatch({ type: 'COMMENTS', payload: this.state})
         this.props.history.push('/review')
-        }
     }
 
     render() {

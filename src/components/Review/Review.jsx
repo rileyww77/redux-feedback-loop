@@ -4,8 +4,16 @@ import axios from 'axios';
 
 class Review extends Component {
 
+    
+
     handleSubmit = () => {
-        
+        let survey = {
+            feeling: this.props.reduxState.feelingsReducer.feelings,
+            understanding: this.props.reduxState.understandingReducer.understanding,
+            support: this.props.reduxState.supportReducer.support,
+            comments: this.props.reduxState.commentsReducer.comments
+        }
+        console.log(survey)
     }
 
     render() {
@@ -33,12 +41,12 @@ class Review extends Component {
                 </ul>
             </div>
             <div>
-                <h2>How are you feeling today?</h2>
+                <h2>Any comments you want to leave?</h2>
                 <ul>
                     <li>{this.props.reduxState.commentsReducer.comments}</li>
                 </ul>
             </div>
-            <button onClick={this.handleSubmit}>Submit Survey</button>
+            <button onClick={() => this.handleSubmit()}>Submit Survey</button>
             </>
         );
     }
