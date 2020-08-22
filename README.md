@@ -1,9 +1,9 @@
 # Project Name
 
-[Project Instructions](./INSTRUCTIONS.md), this line may be removed once you have updated the README.md
+Prime Feedback Form
 
 ## Description
 
-Your project description goes here. What problem did you solve? How did you solve it?
+This application provides a form for students to provide daily feedback for the program. Each question is displayed on a different page, with all the answers displayed at the end. Students must fill out every input (except for an option comment) to proceed to the next page. On submit, the responses get sent to the database for processing later. 
 
-Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
+
