@@ -15,6 +15,7 @@ class Feelings extends Component {
     
     sendFeelings = () => {
         this.props.dispatch({ type: 'FEELINGS', payload: this.state})
+        this.props.history.push('/understanding')
     }
 
     render() {
