@@ -7,6 +7,8 @@ class Comments extends Component {
             <div>
                 <h1>Any comments you want to leave?</h1>
                 <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+                <br />
+                <button>Next Page</button>
             </div>
         );
     }

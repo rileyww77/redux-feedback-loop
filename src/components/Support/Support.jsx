@@ -7,6 +7,8 @@ class Support extends Component {
             <div>
                 <h1>How well are you feeling supported?</h1>
                 <textarea id="support" name="support" rows="4" cols="50"></textarea>
+                <br />
+                <button>Next Page</button>
             </div>
         );
     }
