@@ -4,8 +4,9 @@ import Feelings from '../Feelings/Feelings.jsx';
 import Understanding from '../Understanding/Understanding.jsx';
 import Support from '../Support/Support.jsx';
 import Comments from '../Comments/Comments.jsx';
-import Review from '../Review/Review.jsx'
-import { HashRouter as Router, Route } from 'react-router-dom'
+import Review from '../Review/Review.jsx';
+import Success from '../Success/Success.jsx';
+import { HashRouter as Router, Route } from 'react-router-dom';
 
 
 class App extends Component {
@@ -22,6 +23,7 @@ class App extends Component {
         <Route exact path="/support" component={Support} />
         <Route exact path="/comments" component={Comments} />
         <Route exact path="/review" component={Review} />
+        <Route exact path="/success" component={Success} />
         <br/>
       </div>
       </Router>

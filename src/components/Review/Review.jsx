@@ -17,7 +17,7 @@ class Review extends Component {
         axios.post('/survey', survey)
         .then((response)=> {
             console.log('posted to database')
-            alert('Successfully submited!')
+            this.props.history.push('/success');
         }).catch((error)=> {
             console.log('error in POST', error)
         })
