@@ -26,7 +26,7 @@ class Support extends Component {
         return (
             <div>
                 <h1>How well are you feeling supported?</h1>
-                <textarea id="support" name="support" rows="4" cols="50" onChange = {(event) => this.handleChangeFor(event)}></textarea>
+                <input type='number' onChange = {(event) => this.handleChangeFor(event)}></input>
                 <br />
                 <button onClick={this.sendSupport}>Next Page</button>
             </div>

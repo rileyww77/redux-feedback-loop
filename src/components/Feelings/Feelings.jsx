@@ -28,7 +28,7 @@ class Feelings extends Component {
                 <h1>Please take the time to fill out this survey. Answer honestly!</h1>
                 <br/>
                 <h1>How are you feeling today?</h1>
-                <textarea id="feelings" name="feelings" rows="4" cols="50" onChange = {(event) => this.handleChangeFor(event)}></textarea>
+                <input type='number' onChange = {(event) => this.handleChangeFor(event)}></input>
                 <br />
                 <button onClick={this.sendFeelings}>Next Page</button>
             </div>

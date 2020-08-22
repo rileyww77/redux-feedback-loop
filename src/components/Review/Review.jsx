@@ -14,6 +14,14 @@ class Review extends Component {
             comments: this.props.reduxState.commentsReducer.comments
         }
         console.log(survey)
+        axios.post('/survey', survey)
+        .then((response)=> {
+            console.log('posted to database')
+            alert('Successfully submited!')
+        }).catch((error)=> {
+            console.log('error in POST', error)
+        })
+        
     }
 
     render() {

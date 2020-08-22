@@ -26,7 +26,7 @@ class Understanding extends Component {
         return (
             <div>
                 <h1>How well are you understanding the content?</h1>
-                <textarea id="understanding" name="understanding" rows="4" cols="50" onChange = {(event) => this.handleChangeFor(event)}></textarea>
+                <input type='number' onChange = {(event) => this.handleChangeFor(event)}></input>
                 <br />
                 <button onClick={this.sendUnderstanding}>Next Page</button>
             </div>
