@@ -14,8 +14,12 @@ class Feelings extends Component {
     }
     
     sendFeelings = () => {
+        if (this.state.feelings === ''){
+            alert('please fill out form')
+        } else {
         this.props.dispatch({ type: 'FEELINGS', payload: this.state})
         this.props.history.push('/understanding')
+        }
     }
 
     render() {

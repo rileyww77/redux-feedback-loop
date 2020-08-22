@@ -14,8 +14,12 @@ class Support extends Component {
     }
 
     sendSupport = () => {
+        if (this.state.support === ''){
+            alert('please fill out form')
+        } else {
         this.props.dispatch({ type: 'SUPPORT', payload: this.state})
         this.props.history.push('/comments')
+        }
     }
 
     render() {

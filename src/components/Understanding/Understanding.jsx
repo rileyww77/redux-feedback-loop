@@ -14,8 +14,12 @@ class Understanding extends Component {
     
     }
     sendUnderstanding = () => {
+        if (this.state.understanding === ''){
+            alert('please fill out form')
+        } else {
         this.props.dispatch({ type: 'UNDERSTANDING', payload: this.state})
         this.props.history.push('/support')
+        }
     }
 
     render() {
