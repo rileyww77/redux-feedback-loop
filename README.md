@@ -11,8 +11,9 @@ This app is a feedback form. It collects information on: how the user is feeling
 ### Prerequisites
 
 Software that is required to install the app:
--Node.js
--Redux.js
+- Node.js
+- Redux.js
+
 
 ## Installation
 
@@ -32,12 +33,13 @@ Software that is required to install the app:
 
 ## Built With
 
--React
--Node.js
--Redux.js
--Postgres
--Axios
+- React
+- Node.js
+- Redux.js
+- Postgres
+- Axios
 
 
-
+## Acknowledgement
+Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality.
 
